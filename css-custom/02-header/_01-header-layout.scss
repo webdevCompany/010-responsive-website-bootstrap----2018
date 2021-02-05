@@ -1,0 +1,39 @@
+// Header Layout
+
+// navbar-default
+.my-navbar-default {
+  width: 100%;
+  height: 95px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  background-color: $navbar-default--bg;
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+// navbar-collapse
+.navbar-collapse {
+  margin-top: 10px;
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .my-navbar-default {
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-collapse {
+    height: auto;
+  }
+
+  // Bootstrap 3 default line divider the header and mobile menu
+  // I only changed the color
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: $header-mobile-bottom-line--color;
+  }
+}

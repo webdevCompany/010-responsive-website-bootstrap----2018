@@ -1,0 +1,29 @@
+.services-text-right-mybutton {
+  width: 130px;
+  line-height: 30px;
+  background-color: $services-text-button--bg;
+  color: $services-text-button--color;
+  border-color: $services-text-button--border-color;
+  margin-top: 10px;
+  box-shadow: $services-text-button--box-shadow;
+
+  transition: all 0.4s;
+  opacity: 0;
+  padding: 6px 0px;
+  width: 0px;
+}
+
+.ourservices_green_button_active {
+  transition: all 0.4s;
+  opacity: 1;
+  padding: 6px 12px;
+  width: 130px;
+}
+
+.services-text-right-mybutton:focus,
+.services-text-right-mybutton:active {
+  background-color: $services-text-button--focus-active--bg;
+  box-shadow: 0 0 1px 0 $services-text-button--focus-active--box-shadow;
+  transform: translateY(2px);
+  border-color: $services-text-button--focus-active--border-color;
+}

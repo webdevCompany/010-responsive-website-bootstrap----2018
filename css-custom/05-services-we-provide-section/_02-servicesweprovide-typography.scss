@@ -1,0 +1,45 @@
+/* SERVICES WE PROVIDE TYPOGRAPHY  */
+
+.services-text-right-h3 {
+  font-size: 30px;
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.services-text-right-p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.servicesweprovide-active {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translateY(0) scale(1, 1);
+}
+
+// The heading text is too big I create 2 different headings text
+// 1 for large screen
+// 1 for mobile devices (up to 500px)
+
+.servicesweprovide-heading-large {
+  display: block;
+}
+
+.servicesweprovide-heading-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .servicesweprovide-heading-large {
+    display: none;
+  }
+
+  .servicesweprovide-heading-mobile {
+    display: block;
+  }
+}

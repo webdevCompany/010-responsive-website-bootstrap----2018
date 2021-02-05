@@ -1,0 +1,96 @@
+// Footer Typography
+
+// footer has 3 columns
+// column 1   [h3 p]
+// column 2   [h3 ul li a time]
+// column 3   [h3 p a]
+
+// footer base style
+// footer is divided by 3 footer-section-columns
+.footer-section-column {
+  min-width: 0px;
+}
+
+.footer-section-column h3 {
+  font-size: $footer-h3--font-size;
+  color: $footer-h3--color;
+  margin-top: -5px;
+}
+
+.footer-section-column h4 {
+  font-size: $footer-h4--font-size;
+  color: $footer-h4--color;
+}
+
+.footer-section-column p {
+  font-size: 14px;
+  color: $footer-p--color;
+}
+
+.footer-section-column a {
+  font-size: 14px;
+  color: $footer-a--color;
+}
+
+.footer-section-column ul {
+  padding: 0px;
+}
+
+.footer-section-ul li {
+  width: 100%;
+  height: 30px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.footer-section-column span {
+  color: $footer-p--color;
+}
+
+// footer last line
+.footer-last-line-flex-parent {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+// Media queries
+@media screen and (max-width: 1199px) {
+  .footer-section-column-2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-section-ul li {
+    height: 30px;
+    min-height: 30px;
+  }
+}
+
+@media screen and (min-width: 688px) {
+  .footer-li-break-at-500 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .footer-section-column-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer-li-break-at-500 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-section-ul li {
+    height: 60px;
+  }
+}

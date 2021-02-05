@@ -1,0 +1,13 @@
+// Header toggle
+// This is the button that appears on small devices to open the mobile navigation
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  background: $mobile-dropdown-toggle--bg;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: $mobile-dropdown-toggle-open--bg;
+  border-color: $mobile-dropdown-menu-border--color;
+}

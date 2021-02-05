@@ -1,0 +1,238 @@
+// WEBSITE BASE VARIABLES
+
+// base font
+$base--font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// base color
+$dark-grey: #303030;
+$grey: #ccc;
+$light-grey: #f5f5f5;
+$magenta: magenta;
+$white: #fff;
+$black: #000;
+$pink: #f919ff;
+
+// base button color
+$btn-base--bg: $pink;
+$btn-base--border-color: $pink;
+$btn-base--color: $white;
+
+// base typography
+
+// base font-size  // [ Type Scale: Perfect Fifth ]
+// [ min-width: 992px ]
+$base--font-size: 16px;
+// $h1-lg-device: 3.375rem;   this is type scale size [too big for me]
+$h1-lg-device: 48px; // my custom size.  It is not [type scale]
+$h2-lg-device: 2.25rem;
+$h3-lg-device: 1.5rem;
+$p-big-lg-device: 1.5rem;
+$p-lg-device: 1rem;
+$p-small-lg-device: 0.667rem;
+
+// base font-size  // [ Type Scale: Minor Third ]
+// [ max-width: 767px ]
+$h1-md-device: 2.074rem;
+$h2-md-device: 1.728rem;
+$h3-md-device: 1.44rem;
+$p-big-md-device: 1.2rem;
+$p-md-device: 1rem;
+$p-small-md-device: 1rem;
+
+// base font-size  // [ Type Scale: Major Second ]
+// [ max-width: 400px
+$h1-mobile: 1.602rem;
+$h2-mobile: 1.424rem;
+$h3-mobile: 1.266rem;
+$p-big-mobile: 1.125rem;
+$p-mobile: 1rem;
+$p-small-mobile: 0.889rem;
+
+// base component intro
+$component-intro--color: #333;
+$component-intro-line-divider--bg: #ccc;
+$component-intro-p--font-size: 18px;
+
+// base component arrow scroll sidebar
+$arrow-sidebar-box--bg: $grey;
+$arrow-sidebar-box-hover--bg: $black;
+
+$arrow-sidebar--color: $magenta;
+$arrow-sidebar--font-size: 40px;
+
+// header
+
+// header layout
+$navbar-default--bg: $dark-grey;
+$header-mobile-bottom-line--color: #90047c;
+
+// header component ul-list
+$nav-menu-items--color: #71706e;
+$nav-menu-items--hover--color: $magenta;
+$nav-menu-items--focus--color: $magenta;
+
+// header dropdown toggle
+$header-dropdown-toggle--color: magenta;
+$dropdown-toggle-open--bg: $dark-grey;
+$dropdown-menu--border-color: $magenta;
+
+// header dropdown
+$dropdown-submenu-a--color: #7d797d;
+$dropdown-submenu-a--bg: rgb(49, 48, 48);
+
+$dropdown-submenu-a--hover--color: #bfbfbf;
+$dropdown-submenu-a--hover--bg: #a4048e;
+
+// header mobile
+
+// header mobile dropdown toggle
+$mobile-dropdown-toggle--bg: #461b39;
+$mobile-dropdown-toggle-open--bg: #4a0034;
+$mobile-dropdown-menu-border--color: #4a0034;
+
+// header mobile dropdown
+$dropdown-mobile-submenu-a--color: #7d797d;
+$dropdown-mobile-submenu-a--bg: #383638;
+
+$dropdown-mobile-submenu-a--hover--color: #999393;
+$dropdown-mobile-submenu-a--hover--bg: #b1477b;
+
+// showcase
+
+// showcase Carousel
+$carousel--border-bottom: 100px solid #303030;
+$carousel-caption--color: rgb(103, 104, 110);
+$carousel-control-arrows--color: #5c5c5c;
+
+// carousel item-wrapper-picture
+$carousel-item-wrapper-picture--box-shadow: 0 0px 15px 0px #000 inset;
+$carousel-item-wrapper-picture--border-top: 10px solid #222121;
+$carousel-item-wrapper-picture--border-bottom: 10px solid #222121;
+
+// carousel button
+$carousel-button--color: $white;
+$carousel-button--bg: transparent;
+$carousel-button--border: 2px solid #f919ff;
+$carousel-button--box-shadow: 0 5px 2px rgb(73, 3, 51);
+
+$carousel-button--hover--color: magenta;
+$carousel-button--focus-active--color: $grey;
+$carousel-button--focus-active--bg: $magenta;
+$carousel-button--focus-active--border: 2px solid $magenta;
+$carousel-button--focus-active--box-shadow: 0 -5px 6px rgb(245, 87, 228) inset;
+
+// we are the best
+// wearethebest layout
+$wearethebest--bg: $dark-grey;
+
+$wearethebest-article--color: #403e3e;
+$wearethebest-article--bg: $light-grey;
+
+// wearethebest mobile
+// wearethebest image
+$wearethebest-border-image-mobile: 10px solid #fff;
+$wearethebest-article-border-top-mobile: $dark-grey;
+
+// wearethebest buttons
+// wearethebest article button
+$btn-base--color: $white;
+$btn-base--bg: #f919ff;
+$btn-base--border-color: #f919ff;
+
+$btn-base--focus-active--color: $white;
+$btn-base--focus-active--bg: #f508fb;
+$btn-base--focus-active--border-color: transparent;
+
+// wearethebest (max-width: 767px)
+$wearethebest-flex-article--767--border-top: 5px solid $dark-grey;
+
+// wearethebest (max-width: 500px)
+$wearethebest-flex-article--500--border: 5px solid $dark-grey;
+$wearethebest-flex-article-btn--box-shadow: 0 5px 3px #c509ca;
+$wearethebest-flex-article-btn--focus-active--box-shadow: 0 2px 1px #c509ca;
+
+// services we provide
+// Section Services We Provide is divided into 2 parts
+// 1. image services-text-left  (.service-text-wrapping-image-1)  image
+// 2. text  services-text-right  h3 p
+
+// services-text-left
+$services-text-section--bg: $dark-grey;
+$services-text-left--border: 10px solid $white;
+
+// services-text-right layout
+$services-text-right--bg: #cd2;
+$services-text-dark--border: $dark-grey;
+$services-text-dark--border-top: 10px solid $dark-grey;
+$services-text-dark--border-bottom: 10px solid $dark-grey;
+$services-text-dark--border-left: 20px solid $dark-grey;
+
+// services-text
+$services-text-h3--font-size: 30px;
+$services-text-right--color: #403e3e;
+$services-text-right--border: 2px solid #333;
+
+// services-text buttons
+$services-text-button--color: $white;
+$services-text-button--bg: #a2b10c;
+$services-text-button--border-color: $white;
+$services-text-button--box-shadow: 0 2px 3px 1px #75800a;
+
+$services-text-button--focus-active--bg: #8c9906;
+$services-text-button--focus-active--border-color: $white;
+$services-text-button--focus-active--box-shadow: $black;
+
+// recent projects section
+
+// recent projects layout
+$recent-projects-section--bg: #6b6868;
+
+// show-work-box-inside
+$show-work-box-bg-animation: rgba(0, 0, 0, 0.8);
+
+// recent projects typography
+$recent-projects-section--color: $white;
+$show-work-box-inside-box-p--font-size: 14px;
+
+// recent projects links
+$show-work-inside-box-a--color: #e770ea;
+
+// contact form
+
+// contact layout
+$contact-section--bg: $light-grey;
+
+// contact typography
+$contact--color: $dark-grey;
+$label--color: $pink;
+
+$form-section-p--font-size: 16px;
+
+// contact button
+$contact-btn--color: $white;
+$contact-btn--bg: $magenta;
+$contact-btn--box-shadow: 0 2px 6px 1px $dark-grey;
+
+$contact-btn--focus--color: $white;
+$contact-btn--focus--bg: #c5209a;
+$contact-btn--focus--box-shadow: 0 0 1px 0 $dark-grey;
+
+// footer
+// footer layout
+$footer-section--bg: $dark-grey;
+
+// footer typography
+$footer-h3--font-size: 24px;
+$footer-h4--font-size: 16px;
+$footer-p--font-size: 14px;
+
+$footer-h3--color: #757171;
+$footer-h4--color: #844084;
+$footer-p--color: rgb(89, 91, 87);
+$footer-a--color: #9a789a;
+
+$footer-icon--font-size: 30px;
+
+// footer icons
+$footer-media-icons--color: $black;
+$footer-media-icons--hover--color: $magenta;

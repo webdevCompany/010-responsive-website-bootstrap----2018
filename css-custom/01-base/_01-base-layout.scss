@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.row {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+// Media queries
+@media screen and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

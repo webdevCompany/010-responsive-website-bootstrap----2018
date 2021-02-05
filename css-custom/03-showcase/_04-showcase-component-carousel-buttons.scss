@@ -1,0 +1,67 @@
+// Showcase Carousel button
+.carousel-control.left,
+.carousel-control.right {
+  // remove the background-image
+  background-image: none;
+  color: $carousel-control-arrows--color;
+}
+
+.carousel-buttons-wrapper {
+  width: 300px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-button {
+  width: 140px;
+  line-height: 30px;
+  border: $carousel-button--border;
+  background-color: $carousel-button--bg;
+  color: $carousel-button--color;
+  box-shadow: $carousel-button--box-shadow;
+  transition: all 0.3s;
+}
+
+.carousel-button:hover {
+  color: $carousel-button--hover--color;
+  border: $carousel-button--border;
+}
+
+// this class is on click (jquery) the button is clicked and changes
+.active-nav-button {
+  background-color: $carousel-button--focus-active--bg;
+  box-shadow: $carousel-button--focus-active--box-shadow;
+}
+
+// Bootstrap 3 btn default settings [ to override ]
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0px;
+  border: $carousel-button--focus-active--border;
+  color: $carousel-button--focus-active--color;
+}
+// end carousel button
+
+// Media queries
+@media screen and (max-width: 500px) {
+  .carousel-buttons-wrapper {
+    width: 100%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .carousel-button {
+    width: 100%;
+    line-height: 30px;
+  }
+
+  .carousel-button:nth-child(1) {
+    display: none;
+  }
+}

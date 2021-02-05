@@ -1,0 +1,23 @@
+.arrow-sidebar-box {
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+  width: 30px;
+  height: 30px;
+  background-color: $arrow-sidebar-box--bg;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-sidebar {
+  font-size: $arrow-sidebar--font-size;
+  color: $arrow-sidebar--color;
+}
+
+.arrow-sidebar-box:hover {
+  background-color: $arrow-sidebar-box-hover--bg;
+  cursor: pointer;
+}

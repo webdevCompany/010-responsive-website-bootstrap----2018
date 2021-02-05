@@ -1,0 +1,32 @@
+//  Icons are located inside the .footer-column-1 and they inherit some style
+
+.footer-media-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.footer-media-wrapper a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.footer-media-wrapper a i {
+  font-size: $footer-icon--font-size;
+  color: $footer-media-icons--color;
+  transition: color 0.3s;
+}
+
+.footer-media-wrapper a i:hover {
+  color: $footer-media-icons--hover--color;
+}
+
+@media screen and (max-width: 1020px) {
+  .footer-media-wrapper {
+    justify-content: center;
+  }
+}

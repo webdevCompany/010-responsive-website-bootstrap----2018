@@ -1,0 +1,118 @@
+// Showcase Component Carousel
+
+.carousel-item-wrapper-picture {
+  width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  height: 450px;
+  box-shadow: $carousel-item-wrapper-picture--box-shadow;
+  border-top: $carousel-item-wrapper-picture--border-top;
+  border-bottom: $carousel-item-wrapper-picture--border-bottom;
+}
+
+/* This makes the img responsive width but with fixed height  */
+.carousel-inner > .item > img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+// All carousel images by default have this
+.carousel-inner .item {
+  width: 100%;
+  height: 450px;
+  background-image: url(../images/01-showcase/1366/showcase-1366-carousel-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Media queries
+
+// carousel images [ more than 1199px ]
+.carousel-inner .item:nth-child(1) {
+  background-image: url(../images/01-showcase/1366/showcase-1366-carousel-1.jpg);
+}
+.carousel-inner .item:nth-child(2) {
+  background-image: url(../images/01-showcase/1366/showcase-1366-carousel-2.jpg);
+}
+.carousel-inner .item:nth-child(3) {
+  background-image: url(../images/01-showcase/1366/showcase-1366-carousel-3.jpg);
+}
+
+// carousel images [ up to 1199px ]
+@media screen and (max-width: 1199px) {
+  .carousel-inner .item:nth-child(1) {
+    background-image: url(../images/01-showcase/1199/showcase-1199-carousel-1.jpg);
+  }
+
+  .carousel-inner .item:nth-child(2) {
+    background-image: url(../images/01-showcase/1199/showcase-1199-carousel-2.jpg);
+  }
+
+  .carousel-inner .item:nth-child(3) {
+    background-image: url(../images/01-showcase/1199/showcase-1199-carousel-3.jpg);
+  }
+}
+
+// carousel images [ up to 991px  ]
+@media screen and (max-width: 991px) {
+  .carousel-inner .item:nth-child(1) {
+    height: 436px;
+    background-image: url(../images/01-showcase/991/showcase-991-carousel-1.jpg);
+  }
+
+  .carousel-inner .item:nth-child(2) {
+    height: 436px;
+    background-image: url(../images/01-showcase/991/showcase-991-carousel-2.jpg);
+  }
+
+  .carousel-inner .item:nth-child(3) {
+    height: 436px;
+    background-image: url(../images/01-showcase/991/showcase-991-carousel-3.jpg);
+  }
+}
+
+// carousel images [ up to 767px ]
+@media screen and (max-width: 767px) {
+  .carousel-inner .item:nth-child(1) {
+    height: 337px;
+    background-image: url(../images/01-showcase/767/showcase-767-carousel-1.jpg);
+  }
+
+  .carousel-inner .item:nth-child(2) {
+    height: 337px;
+    background-image: url(../images/01-showcase/767/showcase-767-carousel-2.jpg);
+  }
+
+  .carousel-inner .item:nth-child(3) {
+    height: 337px;
+    background-image: url(../images/01-showcase/767/showcase-767-carousel-3.jpg);
+  }
+}
+
+// carousel images [ up to 500px ]
+@media screen and (max-width: 500px) {
+  .carousel-item-wrapper-picture {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .carousel-inner .item:nth-child(1) {
+    height: 337px;
+    background-image: url(../images/01-showcase/767/showcase-767-carousel-1.jpg);
+    background-size: 100% 337px;
+  }
+
+  .carousel-inner .item:nth-child(2) {
+    height: 337px;
+    background-image: url(../images/01-showcase/767/showcase-767-carousel-2.jpg);
+    background-size: 100% 337px;
+  }
+
+  .carousel-inner .item:nth-child(3) {
+    height: 337px;
+    background-image: url(../images/01-showcase/767/showcase-767-carousel-3.jpg);
+    background-size: 100% 337px;
+  }
+}

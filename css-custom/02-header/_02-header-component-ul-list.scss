@@ -1,0 +1,22 @@
+// Header menu    [ul-list-items]
+
+.navbar-default .navbar-nav > li > a {
+  color: $nav-menu-items--color;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: $nav-menu-items--hover--color;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: $nav-menu-items--focus--color;
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    color: $nav-menu-items--color;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    color: $nav-menu-items--hover--color;
+  }
+}

@@ -1,0 +1,34 @@
+// Showcase  Carousel Typography
+.carousel-caption {
+  position: absolute;
+  top: 100px;
+}
+
+.carousel-caption h1 {
+  color: $carousel-caption--color;
+}
+
+.carousel-caption p {
+  color: $carousel-caption--color;
+}
+
+// end  Carousel typography
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .carousel-caption {
+    position: absolute;
+    top: 40px;
+  }
+
+  .showcase-text-hide-767 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-caption {
+    position: absolute;
+    top: 40px;
+  }
+}

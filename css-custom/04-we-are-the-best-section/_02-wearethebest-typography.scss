@@ -1,0 +1,70 @@
+/* WE ARE THE BEST SECTION TYPOGRAPHY */
+
+.wearethebest-flex-article {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.wearethebest-h3-left,
+.wearethebest-h3-right {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #797878;
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.wearethebest-p-left {
+  color: #797878;
+  line-height: 2;
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.wearethebest-p-right {
+  color: #797878;
+  line-height: 2;
+
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.wearethebest-top-active {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translateY(0) scale(1, 1);
+}
+
+// Media queries
+@media screen and (max-width: 991px) {
+  .wearethebest-flex-article p {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wearethebest-flex-article {
+    border-top: $wearethebest-article-border-top-mobile;
+  }
+
+  .wearethebest-flex-article h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .wearethebest-flex-article p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wearethebest-flex-article {
+    border: $wearethebest-flex-article--500--border;
+  }
+}

@@ -1,0 +1,119 @@
+// CONTACT SECTION LAYOUT
+// This is the contact reference to scroll from Nav Menu to Contact
+// I need the contact section with padding-top: 140 but when I scroll down it looks
+// better to padding-top 70
+#contactWrapper {
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  background-color: $contact-section--bg;
+}
+
+.container-fluid-form-section {
+  width: 100%;
+  padding-top: 70px;
+  clear: both;
+}
+
+.row-form-section {
+  width: 90%;
+  margin: auto;
+  height: 400px;
+  transition: all 0.7s;
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+
+.form_active {
+  transition: all 0.7s;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-section-h2 {
+  margin-bottom: 20px;
+  color: $contact--color;
+  margin-left: 15px;
+}
+
+.row-form-section p {
+  font-size: $form-section-p--font-size;
+  color: $contact--color;
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+
+.form-control {
+  height: 50px;
+}
+
+.form-group:nth-child(3) {
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+label {
+  color: $label--color;
+}
+
+.form-section-button {
+  width: 160px;
+  color: $contact-btn--color;
+  margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  transition: all 0.5s;
+}
+
+.row-form-section .btn-default {
+  background-color: $contact-btn--bg;
+  box-shadow: $contact-btn--box-shadow;
+}
+
+.row-form-section .btn-default:focus {
+  background-color: $contact-btn--focus--bg;
+  color: $contact-btn--focus--color;
+  box-shadow: $contact-btn--focus--box-shadow;
+  transform: translateY(2px);
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .container-fluid-form-section {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .row-form-section {
+    width: 90%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-fluid-form-section {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .row-form-section .col-md-8,
+  .row-form-section .col-sm-10,
+  .row-form-section .col-xs-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .form-section-button {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: $contact-btn--focus--bg;
+    color: $contact-btn--focus--color;
+    box-shadow: $contact-btn--focus--box-shadow;
+    transform: translateY(2px);
+    margin-bottom: 80px;
+  }
+}

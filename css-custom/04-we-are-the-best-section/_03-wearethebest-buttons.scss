@@ -1,0 +1,48 @@
+/*wearethebest---component-button --------------------------------------------*/
+// order:  -->  :link — :visited — :hover — :active
+
+.wearethebest-top-mybutton,
+.wearethebest-bottom-mybutton {
+  width: 130px;
+  line-height: 30px;
+  border-color: $btn-base--border-color;
+  background-color: $btn-base--bg;
+  color: $btn-base--color;
+  margin-top: 30px;
+  transition: all 0.4s;
+  box-shadow: $wearethebest-flex-article-btn--box-shadow;
+  opacity: 0;
+  transform: scale(0.8, 0.8);
+}
+
+.wearethebest-top-active {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translateY(0) scale(1, 1);
+}
+
+.wearethebest-mybutton:focus,
+.wearethebest-mybutton:active {
+  color: $btn-base--focus-active--color;
+  background-color: $btn-base--focus-active--bg;
+  border-color: $btn-base--focus-active--border-color;
+  box-shadow: $wearethebest-flex-article-btn--focus-active--box-shadow;
+  transform: translateY(2px);
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .wearethebest-mybutton {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wearethebest-mybutton {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}

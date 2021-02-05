@@ -1,0 +1,58 @@
+/*RECENT PROJECTS SECTION LAYOUT --------------------------*/
+.container-fluid-recent-projects-section {
+  width: 100%;
+  height: auto;
+  background-color: $recent-projects-section--bg;
+  transition: all 0.7s;
+  opacity: 0;
+  transform: translateX(100vw);
+}
+
+.recent_projects_active {
+  transition: all 0.7s;
+  opacity: 1;
+  transform: translateX(0vw);
+}
+.row-bottom-recent-projects-section {
+  width: 90%;
+  margin: auto;
+}
+
+.column-wrapper-show-work-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column-wrapper-show-work-box-top-pictures {
+  padding-top: 80px;
+  padding-bottom: 0px;
+}
+
+.column-wrapper-show-work-box-bottom-pictures {
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+
+// Media queries
+@media screen and (max-width: 991px) {
+  .row-bottom-recent-projects-section .col-lg-12,
+  .row-bottom-recent-projects-section .col-md-12,
+  .row-bottom-recent-projects-section .col-sm-12,
+  .row-bottom-recent-projects-section .col-xs-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .column-wrapper-show-work-box-top-pictures {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .column-wrapper-show-work-box-bottom-pictures {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}

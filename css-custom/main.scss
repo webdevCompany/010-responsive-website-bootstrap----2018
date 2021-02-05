@@ -1,0 +1,32 @@
+@import '01-base/_00-base-variables.scss';
+@import '01-base/_01-base-layout.scss';
+@import '01-base/_02-base-typography.scss';
+@import '01-base/_03-base-component-intro-sections.scss';
+@import '01-base/_04-component-arrow-scroll-sidebar.scss';
+
+@import '02-header/_01-header-layout.scss';
+@import '02-header/_02-header-component-ul-list.scss';
+@import '02-header/_03-header-component-dropdown.scss';
+@import '02-header/_04-header-toggle-open-mobile-nav.scss';
+
+@import '03-showcase/_01-showcase-layout.scss';
+@import '03-showcase/_02-showcase-component-carousel-images.scss';
+@import '03-showcase/_03-showcase-component-carousel-typography.scss';
+@import '03-showcase/_04-showcase-component-carousel-buttons.scss';
+
+@import '04-we-are-the-best-section/_01-wearethebest-layout.scss';
+@import '04-we-are-the-best-section/_02-wearethebest-typography.scss';
+@import '04-we-are-the-best-section/_03-wearethebest-buttons.scss';
+
+@import '05-services-we-provide-section/_01-servicesweprovide-layout.scss';
+@import '05-services-we-provide-section/_02-servicesweprovide-typography.scss';
+@import '05-services-we-provide-section/_03-servicesweprovide-buttons.scss';
+
+@import '06-recent-projects-section/_01-recent-projects-layout.scss';
+@import '06-recent-projects-section/_02-recent-projects-component-box-project.scss';
+
+@import '07-contact-section/_01-contact-form-component-layout.scss';
+
+@import '08-footer-section/_01-footer-section-layout.scss';
+@import '08-footer-section/_02-footer-section-typography.scss';
+@import '08-footer-section/_03-footer-section-ul-icons.scss';

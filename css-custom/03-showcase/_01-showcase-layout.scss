@@ -1,0 +1,23 @@
+// SHOWCASE HAS NO STYLING
+// EVERYTHING IS INSIDE THE CAROUSEL
+
+.carousel {
+  // border-bottom: 100px solid #303030;
+  border-bottom: $carousel--border-bottom;
+}
+
+//    How to style col-md-... or col-xs-5....
+//    1. Add a class to the end col-md.. div and apply style
+.col-wrapping-showcase {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+// Media queries
+@media screen and (max-width: 500px) {
+  .showcase {
+    width: 100%;
+  }
+}

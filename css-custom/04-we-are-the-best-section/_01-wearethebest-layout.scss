@@ -1,0 +1,208 @@
+// WE ARE THE BEST LAYOUT
+//    This sections has 2 parts top and bottom each one has 2 parts
+//    1  .wearethebest-flex-article (h3 p)
+//    2  .wearethebest-flex-image (img)
+
+.container-wearethebest-top,
+.container-wearethebest-bottom {
+  width: 100%;
+  height: auto;
+  background-color: $wearethebest--bg;
+}
+
+.container-wearethebest-top {
+  padding-top: 40px;
+}
+
+.container-wearethebest-bottom {
+  padding-bottom: 40px;
+}
+
+.row-wearethebest-top {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+.row-wearethebest-bottom {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+.col-wearethebest-flex-parent {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wearethebest-flex-article {
+  min-width: 268px;
+  width: 50%;
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  color: $wearethebest-article--color;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.wearethebest-top-image {
+  min-width: 240px;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/03-wearethebest/1366/wearethebest-top-1366.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  flex-shrink: 9;
+  padding: 2%;
+
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.wearethebest-top-active {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translateY(0) scale(1, 1);
+}
+.wearethebest-bottom-image {
+  min-width: 240px;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/03-wearethebest/1366/wearethebest-bottom-1366.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  flex-shrink: 9;
+  padding: 2%;
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+// Media queries
+@media screen and (max-width: 1199px) {
+  .container-wearethebest-top {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .container-wearethebest-bottom {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .row-wearethebest-top,
+  .row-wearethebest-bottom {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-wearethebest-top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .container-wearethebest-bottom {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .row-wearethebest-top,
+  .row-wearethebest-bottom {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .row-wearethebest-top .col-flex-div-flex-parent,
+  .row-wearethebest-bottom .col-flex-div-flex-parent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .row-wearethebest-top .wearethebest-flex-image,
+  .row-wearethebest-bottom .wearethebest-flex-image {
+    min-width: 400px;
+    width: 100%;
+    height: 200px;
+    border: $wearethebest-border-image-mobile;
+  }
+
+  .row-wearethebest-top .wearethebest-flex-article,
+  .row-wearethebest-bottom .wearethebest-flex-article {
+    min-width: 400px;
+    height: auto;
+  }
+
+  .row-wearethebest-top .wearethebest-flex-image {
+    order: 0;
+  }
+
+  .row-wearethebest-top .wearethebest-flex-article {
+    order: 1;
+  }
+
+  .col-wearethebest-flex-parent {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row-wearethebest-top,
+  .row-wearethebest-bottom {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .row-wearethebest-top .col-xs-12,
+  .row-wearethebest-bottom .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .row-wearethebest-top .col-flex-div-flex-parent,
+  .row-wearethebest-bottom .col-flex-div-flex-parent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .row-wearethebest-top .wearethebest-flex-image,
+  .row-wearethebest-bottom .wearethebest-flex-image {
+    min-width: auto;
+    width: 100%;
+    order: 0;
+    height: 200px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .row-wearethebest-top .wearethebest-flex-article,
+  .row-wearethebest-bottom .wearethebest-flex-article {
+    min-width: auto;
+    height: auto;
+    order: 1;
+  }
+
+  .col-wearethebest-flex-parent {
+    height: auto;
+  }
+}

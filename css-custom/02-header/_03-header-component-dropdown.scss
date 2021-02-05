@@ -1,0 +1,71 @@
+// Header dropdown
+// The dropdown is the submenu that opens when you click one of the menu items
+// The toggle is just a menu item that changes behaviour when you click on it
+
+// toggle
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: $header-dropdown-toggle--color;
+  background-color: $dropdown-toggle-open--bg;
+}
+
+// ul submenu
+.navbar-nav > li > .dropdown-menu {
+  background-color: rgb(49, 48, 48);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid $dropdown-menu--border-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: $dropdown-submenu-a--color;
+  background-color: $dropdown-submenu-a--bg;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: $dropdown-submenu-a--hover--bg;
+  color: $dropdown-submenu-a--hover--color;
+}
+
+// Media queries
+// ul submenu  [dropdown]  small devices
+
+@media (max-width: 767px) {
+  // dropdown-menu on large screen has 5px from the header
+  // it is not suitable for mobile devices
+  .navbar-nav > li > .dropdown-menu {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    color: $magenta;
+    background-color: $mobile-dropdown-toggle-open--bg;
+  }
+
+  /*navbar.less:475*/
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: $dropdown-mobile-submenu-a--color;
+    background-color: $dropdown-mobile-submenu-a--bg;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: $dropdown-mobile-submenu-a--hover--bg;
+    color: $dropdown-mobile-submenu-a--hover--color;
+  }
+}
